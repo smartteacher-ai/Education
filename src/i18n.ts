@@ -1,0 +1,132 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+
+const resources = {
+  en: {
+    translation: {
+      "dashboard": "Dashboard",
+      "upload_center": "Upload Center",
+      "library": "Library",
+      "settings": "Settings",
+      "welcome": "Welcome back, Educator",
+      "total_materials": "Total Materials",
+      "lesson_plans": "Lesson Plans",
+      "exams_created": "Exams Created",
+      "recent_activity": "Recent Activity",
+      "no_materials": "No materials yet",
+      "start_upload": "Start by uploading a PDF or recording audio.",
+      "create_first": "Create First Material",
+      "upload_pdf": "Upload PDF",
+      "record_audio": "Record Audio",
+      "api_quota": "Daily API Quota",
+      "requests_remaining": "{{remaining}} requests remaining",
+      "unlimited_access": "Unlimited Access",
+      "search_placeholder": "Search materials...",
+      "all_content": "All Content",
+      "lesson_plan": "Lesson Plan",
+      "assignment": "Assignment",
+      "summary": "Summary",
+      "full_course": "Full Course",
+      "exam": "Exam",
+      "name": "Name",
+      "date": "Date",
+      "type": "Type",
+      "status": "Status",
+      "generated_content": "Generated Content",
+      "actions": "Actions",
+      "transcription": "Transcription",
+      "extracted_text": "Extracted Text",
+      "generate": "Generate {{type}}",
+      "generating": "Generating...",
+      "copy": "Copy",
+      "print": "Print",
+      "back_to_library": "Back to Library",
+      "original_audio": "Original Audio",
+      "no_content_generated": "No {{type}} Generated",
+      "use_ai_to_generate": "Use AI to automatically generate a structured {{type}} based on your content.",
+      "language": "Language",
+      "api_key": "API Key",
+      "api_key_desc": "Enter your own Google AI Studio API key for unlimited access.",
+      "save": "Save",
+      "saved": "Saved!",
+      "drag_drop_pdf": "Drag and drop or select a PDF file.",
+      "select_file": "Select File",
+      "record_desc": "Use your microphone to record a voice note directly.",
+      "start_recording": "Start Recording",
+      "stop_recording": "Stop Recording",
+      "processing": "Processing...",
+      "quota_exceeded": "Daily quota exceeded. Please add your own API key in Settings.",
+      "error_processing": "Failed to process. Please try again."
+    }
+  },
+  ar: {
+    translation: {
+      "dashboard": "لوحة القيادة",
+      "upload_center": "مركز الرفع",
+      "library": "المكتبة",
+      "settings": "الإعدادات",
+      "welcome": "مرحباً بك، أيها المعلم",
+      "total_materials": "إجمالي المواد",
+      "lesson_plans": "خطط الدروس",
+      "exams_created": "الاختبارات المنشأة",
+      "recent_activity": "النشاط الأخير",
+      "no_materials": "لا توجد مواد بعد",
+      "start_upload": "ابدأ برفع ملف PDF أو تسجيل صوتي.",
+      "create_first": "إنشاء أول مادة",
+      "upload_pdf": "رفع PDF",
+      "record_audio": "تسجيل صوتي",
+      "api_quota": "الحصة اليومية",
+      "requests_remaining": "متبقي {{remaining}} طلبات",
+      "unlimited_access": "وصول غير محدود",
+      "search_placeholder": "البحث في المواد...",
+      "all_content": "جميع المحتويات",
+      "lesson_plan": "خطة درس",
+      "assignment": "واجب",
+      "summary": "ملخص",
+      "full_course": "دورة كاملة",
+      "exam": "اختبار",
+      "name": "الاسم",
+      "date": "التاريخ",
+      "type": "النوع",
+      "status": "الحالة",
+      "generated_content": "المحتوى المولد",
+      "actions": "إجراءات",
+      "transcription": "النص المفرغ",
+      "extracted_text": "النص المستخرج",
+      "generate": "توليد {{type}}",
+      "generating": "جاري التوليد...",
+      "copy": "نسخ",
+      "print": "طباعة",
+      "back_to_library": "العودة للمكتبة",
+      "original_audio": "الصوت الأصلي",
+      "no_content_generated": "لم يتم توليد {{type}}",
+      "use_ai_to_generate": "استخدم الذكاء الاصطناعي لتوليد {{type}} منظم بناءً على محتواك.",
+      "language": "اللغة",
+      "api_key": "مفتاح API",
+      "api_key_desc": "أدخل مفتاح Google AI Studio الخاص بك للحصول على وصول غير محدود.",
+      "save": "حفظ",
+      "saved": "تم الحفظ!",
+      "drag_drop_pdf": "اسحب وأفلت أو اختر ملف PDF.",
+      "select_file": "اختر ملف",
+      "record_desc": "استخدم الميكروفون لتسجيل ملاحظة صوتية مباشرة.",
+      "start_recording": "بدء التسجيل",
+      "stop_recording": "إيقاف التسجيل",
+      "processing": "جاري المعالجة...",
+      "quota_exceeded": "تم تجاوز الحصة اليومية. يرجى إضافة مفتاح API الخاص بك في الإعدادات.",
+      "error_processing": "فشلت المعالجة. يرجى المحاولة مرة أخرى."
+    }
+  }
+};
+
+i18n
+  .use(initReactI18next)
+  .init({
+    resources,
+    lng: "ar", // default language
+    fallbackLng: "en",
+    interpolation: {
+      escapeValue: false
+    }
+  });
+
+export default i18n;

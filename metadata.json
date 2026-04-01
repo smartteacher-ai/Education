@@ -1,0 +1,5 @@
+{
+  "name": "EduVoice & EduDocs",
+  "description": "AI Educational Content Platform for educators to upload voice notes or PDF documents, extract text, and generate lesson plans, courses, and exams. Arabic-first with RTL support.",
+  "requestFramePermissions": ["microphone"]
+}
